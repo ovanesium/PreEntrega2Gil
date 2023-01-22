@@ -1,0 +1,58 @@
+{
+  "comidachina": [
+    {
+      "name": "Baozi",
+      "description": "Más fugitivo que nunca, Jesse Pinkman escapa de sus captores ...",
+      "price": "1400"
+    },
+    {
+      "name": "Jiaozi",
+      "description": "El más famoso general romano, Maximus, acaba convertido en esclavo ...",
+      "price": "1700"
+    },
+    {
+      "name": "Chaofan",
+      "description": "Tras viajar al pasado por accidente en un DeLorean convertido en ...",
+      "price": "1200"
+    }
+  ],
+  "comidajaponesa": [
+    {
+      "name": "Onigiri",
+      "description": "Un profesor de Química de secundaria con cáncer terminal se asocia a ...",
+      "price": "900"
+    },
+    {
+      "name": "Sushi",
+      "description": "Después de la extraña desaparición de un niño, un pueblo se encuentra ...",
+      "price": "3000"
+    },
+    {
+      "name": "Ramen",
+      "description": "Inteligente, sarcástica y un poco muerta por dentro, Merlina Addams investiga ...",
+      "price": "2100"
+    },
+    {
+      "name": "Te de matcha",
+      "description": "Una serie nominada al Emmy que deriva de Breaking Bad y ...",
+      "price": "800"
+    }
+  ],
+  "comidacoreana": [
+    {
+      "name": "Grill",
+      "description": "Un profesor de Química de secundaria con cáncer terminal se asocia a ...",
+      "price": "1800"
+    },
+    {
+      "name": "Wontons",
+      "description": "Después de la extraña desaparición de un niño, un pueblo se encuentra ...",
+      "price": "1700"
+    },
+    {
+      "name": "Soju",
+      "description": "Inteligente, sarcástica y un poco muerta por dentro, Merlina Addams investiga ...",
+      "price": "2000"
+    }
+  ]
+}
