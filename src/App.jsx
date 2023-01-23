@@ -6,14 +6,12 @@ import React from "react";
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <main>
-          <NavBar />
-          <ItemListContainer greeting={"Bienvenidos a Fast Food Asia"} />
-        </main>
-      </div>
-    </>
+    <div className="App">
+      <main>
+        <NavBar />
+        <ItemListContainer greeting={"Bienvenidos a Fast Food Asia"} />
+      </main>
+    </div>
   );
 }
 
