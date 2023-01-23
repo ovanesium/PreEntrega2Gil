@@ -7,14 +7,12 @@ import React from "react";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <div className="App">
-          <main>
-            <NavBar />
-            <ItemListContainer greeting={"Bienvenidos a Fast Food Asia"} />
-          </main>
-        </div>
-      </BrowserRouter>
+      <div className="App">
+        <main>
+          <NavBar />
+          <ItemListContainer greeting={"Bienvenidos a Fast Food Asia"} />
+        </main>
+      </div>
     </>
   );
 }
