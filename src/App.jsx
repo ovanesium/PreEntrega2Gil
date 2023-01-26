@@ -1,17 +1,42 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
-import { BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
+import data from "../public/data.json";
 
 function App() {
+  const { comidachina, comidajaponesa, comidacoreana } = data;
+  console.log(comidachina);
+
   return (
-    <div className="App">
-      <main>
-        <NavBar />
-        <ItemListContainer greeting={"Bienvenidos a Fast Food Asia"} />
-      </main>
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ItemListContainer greeting={"Bienvenidos a Fast Food Asia"} />
+          }
+        />
+        <Route path="/comidachina" element={<List list={comidachina} />} />
+        <Route path="/comidachina/:name" element={<ItemDetail data={data} />} />
+        <Route
+          path="/comidajaponesa"
+          element={<List list={comidajaponesa} />}
+        />
+        <Route
+          path="/comidajaponesa/:name"
+          element={<ItemDetail data={data} />}
+        />
+        <Route path="/comidacoreana" element={<List list={comidacoreana} />} />
+        <Route
+          path="/comidacoreana/:name"
+          element={<ItemDetail data={data} />}
+        />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </>
   );
 }
 
