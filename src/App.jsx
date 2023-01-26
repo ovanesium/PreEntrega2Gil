@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 import { Route, Routes } from "react-router-dom";
 import React from "react";
-import data from "../public/data.json";
+import data from "./data.json";
 
 function App() {
   const { comidachina, comidajaponesa, comidacoreana } = data;
