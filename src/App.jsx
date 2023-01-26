@@ -1,17 +1,21 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import React from "react";
 import data from "./data.json";
+import List from "./components/List";
+import ItemDetail from "./components/ItemDetail";
 
 function App() {
   const { comidachina, comidajaponesa, comidacoreana } = data;
+  console.log(comidachina);
 
   return (
     <>
       <NavBar />
       <Routes>
+        <Route path="*" element={<Navigate to="/" />} />
         <Route
           path="/"
           element={
@@ -33,7 +37,6 @@ function App() {
           path="/comidacoreana/:name"
           element={<ItemDetail data={data} />}
         />
-        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
