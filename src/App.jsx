@@ -7,7 +7,6 @@ import data from "../public/data.json";
 
 function App() {
   const { comidachina, comidajaponesa, comidacoreana } = data;
-  console.log(comidachina);
 
   return (
     <>
